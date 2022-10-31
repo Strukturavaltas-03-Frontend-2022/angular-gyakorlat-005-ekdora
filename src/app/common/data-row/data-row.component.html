@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-12 mb-1 pt-1 pb-1 d-flex justify-content-between">
+    <app-data-cell [data]="dataRow" key="id"></app-data-cell>
+    <app-data-cell [data]="dataRow" key="name"></app-data-cell>
+    <app-data-cell [data]="dataRow" key="email"></app-data-cell>
+    <app-data-cell [data]="dataRow" key="address"></app-data-cell>
+    <app-data-cell [data]="dataRow" key="active"></app-data-cell>
+    <app-action-button-group
+      (selectClick)="onSelectClicked()"
+      (updateClick)="onUpdateClicked()"
+      (deleteClick)="onDeleteClicked()"
+    ></app-action-button-group>
+  </div>
+</div>
